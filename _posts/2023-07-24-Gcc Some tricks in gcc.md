@@ -1,11 +1,11 @@
 ---
-title: "Gcc编译器的那些坑"
-date: 2023-07-24T00:19:30-04:00
+title: "Welcome to Jekyll!"
+date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
 tags:
-  - gcc
-  - OS
+  - Jekyll
+  - update
 ---
 
 # Gcc 编译器的那些坑
