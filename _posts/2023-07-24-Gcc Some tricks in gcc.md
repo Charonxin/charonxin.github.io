@@ -1,18 +1,20 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2019-04-18T15:34:30-04:00
+title: "Some tricks in gcc"
+date: 2023-07-24T15:34:30-04:00
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
+  - gcc
+  - operating system
 ---
 
 # Gcc 编译器的那些坑
 
 -------
 
+
 在进行到真相还原那本书的第七章时，遇到的一些小问题。
+
 
 ## 问题复现
 
@@ -110,7 +112,8 @@ interrupt.c:(.text+0x3dc): undefined reference to `__stack_chk_fail'
 > the program exits.
 >
 > -fstack-check
-> 	Generate code to verify that you do not go beyond the boundary of the stack.
+> 	
+>   Generate code to verify that you do not go beyond the boundary of the stack.
 > You should specify this flag if you are running in an environment with multiple
 > threads, but you only rarely need to specify it in a single-threaded environment
 > since stack overflow is automatically detected on nearly all systems if there is
@@ -123,7 +126,8 @@ interrupt.c:(.text+0x3dc): undefined reference to `__stack_chk_fail'
 > best checking method and is equivalent to bare ‘-fstack-check’
 >
 > -fno-stack-limit
-> 	Generate code to ensure that the stack does not grow beyond a certain value,
+> 	
+>   Generate code to ensure that the stack does not grow beyond a certain value,
 > either the value of a register or the address of a symbol. If a larger stack is
 > required, a signal is raised at run time. For most targets, the signal is raised
 > before the stack overruns the boundary, so it is possible to catch the signal
