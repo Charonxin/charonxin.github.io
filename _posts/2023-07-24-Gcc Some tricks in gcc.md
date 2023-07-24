@@ -1,6 +1,5 @@
 ---
 title: "Some tricks in gcc"
-date: 2023-07-24T15:34:30-04:00
 categories:
   - blog
 tags:
