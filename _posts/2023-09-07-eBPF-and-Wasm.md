@@ -7,7 +7,7 @@ tags:
   - Wasm
 ---
 
-# eBPF and Wasm: Exploring the Future of the Service Mesh Data Plane
+# eBPF and Wasm: 探索服务网格数据平面的未来
 
 -----------
 
